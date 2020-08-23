@@ -26,9 +26,8 @@ Por lo tanto, pertenece a O(n)
 
 El algoritmo utiliza la formula de las propiedades de las sumatorias:
 
-        n ( n + 1 )
-   E =    ------------
-                   2
+    E =    (n ( n + 1 ))/2
+
        
 Donde la suma comienza en i y termina en n
 Por esto, cada vez que se ejecute el código, se correra una vez,
