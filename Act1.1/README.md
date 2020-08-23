@@ -29,7 +29,7 @@ El algoritmo utiliza la formula de las propiedades de las sumatorias:
     E =    (n ( n + 1 ))/2
 
        
-Donde la suma comienza en i y termina en n
-Por esto, cada vez que se ejecute el código, se correra una vez,
-independientemente del valor de n.
+Donde la suma comienza en "i = 1" y termina en "n"
+Por esto, cada vez que se ejecute el código, se correra una sola vez,
+independientemente del valor de "n".
 Por lo tanto, pertenece a O(1).
