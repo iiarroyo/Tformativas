@@ -117,7 +117,7 @@ T DList<T>::remove(int index)
         delete p;
         size--;
     }
-    if (index == 0)
+   else if (index == 0)
     {
 //        remove first
 
