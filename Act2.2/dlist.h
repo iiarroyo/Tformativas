@@ -107,17 +107,18 @@ T DList<T>::remove(int index)
     Node<T>* p,*q;
     if(head == 0)
         return -1;
+    
     p = head;
     val = p->value;
 // remove 1 elem
-    if(head == tail)
+    if (head == tail)
     {
         head = 0;
         tail = 0;
         delete p;
         size--;
     }
-   else if (index == 0)
+    else if (index == 0)
     {
 //        remove first
 
@@ -126,10 +127,19 @@ T DList<T>::remove(int index)
         delete p;
         size--;
     }
+    else if(index == size-1)
+    {
+//        remove final
+        p = tail;
+        tail = p->previous;
+        p->previous->next=0;
+        delete p;
+        size--;
+        
+    }
     else
     {
 //        remove en medio
-
         q = p->next;
         for(int i = 1; i < size; i++)
         {
