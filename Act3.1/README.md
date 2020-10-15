@@ -3,7 +3,7 @@
 ### A01706190
 
 ## visit
-Visit está funciona uniendo diferentes maneras de representar un árbol en un arreglo. Es importante revisar cada una y sus respectivas compeljidades.
+Visit funciona uniendo diferentes maneras de representar un árbol en un arreglo. Es importante revisar cada una y sus respectivas compeljidades de estas funciones. Por la complejidad de level by level, se puede afirmar que su complejidad es de **O(n^2)**.
 ### inorder, postorder y preorder
 Estas tres funciones hacen un único recorrido del árbol entero, solo cambia el orden de la impresión. Por lo tanto, corren en un tiempo de **O(n)**. Este orden de impresión está dado como:
 - inorder: left -> root -> right
