@@ -6,9 +6,9 @@
 Visit está funciona uniendo diferentes maneras de representar un árbol en un arreglo. Es importante revisar cada una y sus respectivas compeljidades.
 ### inorder, postorder y preorder
 Estas tres funciones hacen un único recorrido del árbol entero, solo cambia el orden de la impresión. Por lo tanto, corren en un tiempo de **O(n)**. Este orden de impresión está dado como:
->inorder: left -> root -> right
->preorder: root -> left -> right
->postorder: left -> right -> root
+- inorder: left -> root -> right
+- preorder: root -> left -> right
+- postorder: left -> right -> root
 
 ### level by level
 Esta última manera toma un tiempo de **O(n^2)**. Esto se debe a que la función recursiva es llamada por un loop "for" que depende de los niveles que se requieran recorrer.
