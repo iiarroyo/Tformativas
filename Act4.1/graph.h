@@ -15,6 +15,8 @@
 #include <sstream>
 #include <string>
 #include <queue>
+#include <stack>
+#include <algorithm>
 
 class Graph
 {
@@ -193,9 +195,9 @@ void Graph::addEdgeList(std::vector<int>* vec)
         int node = vec->at(i);
         int arch = vec->at(i+1);
         list[node].push_back(arch);
-        sort(list[node].begin(),list[node].end());
+        std::sort(list[node].begin(),list[node].end());
         list[arch].push_back(node);
-        sort(list[arch].begin(),list[arch].end());
+        std::sort(list[arch].begin(),list[arch].end());
 //        std::cout<<"  1  ";
     }
 
