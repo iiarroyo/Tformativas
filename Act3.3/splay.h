@@ -283,6 +283,7 @@ public:
     void leftRot(Node<T>*);
     bool find(T);
     void remove(T);
+    int size();
     
     void add(T);
     std::string inorder() const;
@@ -290,6 +291,7 @@ public:
     
 private:
     Node<T>* root;
+    int totalSize;
 };
 template <class T>
 SplayTree<T>::SplayTree(): root(0){}
@@ -410,6 +412,7 @@ void SplayTree<T>::add(T val)
     }
     else
         root = new Node<T>(val);
+    totalSize++;
     
 }
 template <class T>
@@ -496,8 +499,15 @@ void SplayTree<T>::remove(T val)
             if (p != 0)
                 Splay(p);
         }
+        totalSize--;
     }
 
+}
+
+template <class T>
+int SplayTree<T>::size()
+{
+  return totalSize;
 }
 
 
