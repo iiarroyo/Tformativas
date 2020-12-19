@@ -5,22 +5,22 @@
 //  Israel Ivan Arroyo Parada
 //  A01706190
 
-Análisis de complejidad temporal utilizand notacion Big-O.
+# Análisis de complejidad temporal utilizando notacion Big-O.
 
-#suma Iterativa
+## suma Iterativa
 
 El ciclo declarado hace que se itere la operacion n numero de veces
 desde "i = 1" hasta "n", utilizando un acumulado que se entrega al final. Si se ejecuta el código con el número 5, la suma se hara como: 1 + 2 + 3 + 4 + 5. Donde se suma cada número y se avanza con un iterador "i". Al final se entrega el acumulado en la variable "acum". Se puede ver que los pasos se hacen "n" número de veces, la suma de la iteración y la suma del acumulado.
 Por lo tanto, pertenece a O(n).
 
 
-#suma Recursiva
+## suma Recursiva
 
 La funcion se llama a ella misma con cada digito de "n".
 La recursion de la funcion se calcula cada vez llamandose a sí misma con "(n-1)". Si se llana la funcion con el nuemro 5, la suma se hara como 5 + 4 + 2 + 1 + 0. La funcion se mueve entre los digitos restando un digito, hasta llegar a cero y empezar a regresar cada dígito de cada "nivel" de recursion.
 Por lo tanto, pertenece a O(n)
 
-#suma Directa
+## suma Directa
 
 El algoritmo utiliza la formula de las propiedades de las sumatorias:
 
